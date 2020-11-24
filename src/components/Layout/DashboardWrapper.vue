@@ -15,8 +15,6 @@
             </transition>
           </div>
         </div>
-
-        <TheFooter />
       </div>
     </div>
   </div>

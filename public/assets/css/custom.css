@@ -290,7 +290,7 @@ header.navbar {
   background: #f0f6fb;
   border-radius: 0;
   border: 0;
-  border-right: 3px solid #5a99d9;
+  border-left: 3px solid #5a99d9;
 }
 
 #sidebar ul.menu-categories li.menu > .dropdown-toggle {
@@ -352,8 +352,8 @@ header.navbar {
   bottom: 0;
   width: 254px;
   width: 234px;
-  background-color: #242a3e;
-  border-top: 1px solid #3a3a51;
+  background-color: #52c7ff;
+  border-top: 1px solid #52c7ff;
   font-size: 0.85714rem;
   margin-bottom: 0;
   padding-inline-start: 0;
@@ -371,12 +371,12 @@ header.navbar {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 15px 0 15px 20px;
-  border-left: 3px solid #2d2d48;
+  padding: 15px 0;
+  /* border-left: 3px solid #2d2d48; */
   background-position: 25px 50%;
-  color: #000000;
+  color: #ffffff;
   font-weight: 600;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 /* .navbar .navbar-item .nav-item.dropdown.notification-dropdown .nav-link span.badge {
@@ -1058,158 +1058,34 @@ label {
 }
 
 /*===== Table ======*/
-.table td {
-  line-height: 1.4;
+.nametable {
+  color: #616161;
+  display: table;
+  margin: 0 2em 2em 2em;
+  line-height: 1.7;
+  font-size: 18px;
+  /* width: 95%; */
 }
 
-thead tr th {
-  background: #502bf6;
-  font-size: 13.5;
+.nametable .row {
+  display: table-row;
+  background-color: #ffffff;
 }
 
-.table > thead {
-  border: 0;
+.nametable .row.header {
+  color: #000;
+  background-color: #ffffff;
+  text-transform: uppercase;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
-  background-color: transparent !important;
+.nametable .cell {
+  display: table-cell;
+  padding: 1em 2em;
+  border-bottom: 1px solid #f5f5f5;
 }
 
-.VueTables__heading {
-  text-transform: capitalize;
-  color: #1b55e2;
-}
-
-.table-hover tbody tr:hover {
-  color: #212529;
-  background-color: rgba(0, 0, 0, 0.075) !important;
-}
-
-.VueTables__limit {
-  display: none;
-}
-
-tr.VueTables__row :focus,
-tr.VueTables__row td:focus,
-.VueTables__table th:focus {
-  outline: 0;
-}
-
-tbody tr.VueTables__row:hover,
-tbody tr.VueTables__row:focus {
-  background-color: #cbe6df;
-}
-
-.VueTables__table th {
-  background: transparent;
-}
-.table td {
-  text-transform: capitalize !important;
-}
-
-/* .table-striped tbody tr:nth-of-type(even) {
-  background-color: rgba(0, 0, 0, 0.05);
-} */
-.table-bordered td,
-.table-bordered th {
-  font-size: 12.5px !important;
-  border: 0;
-}
-.table thead th {
-  vertical-align: bottom;
+.nametable .row:last-child .cell {
   border-bottom: none;
-}
-/* .table-striped tbody tr:last-child {
-  border-bottom: 2px solid #828282;
-} */
-.table-hover tbody tr {
-  border-bottom: none;
-}
-.table-hover tbody tr:hover {
-  color: #cbe6df;
-  /* color: rgb(237, 28, 36); */
-  /* background-color: #cbe6df !important; */
-  cursor: pointer;
-}
-.VuePagination > nav {
-  display: flex;
-  justify-content: space-between;
-}
-.VuePagination > nav > p {
-  display: none;
-}
-.VueTables__search input {
-  display: none !important;
-}
-
-/* Vue Donut Chart */
-.cdc-legend-item {
-  font-size: 10px;
-}
-.cdc-legend-item-color {
-  border-radius: 50% !important;
-}
-
-/* Vue K-Progress */
-.k-progress-outer {
-  width: -webkit-fill-available !important;
-}
-
-/* Vue Select */
-.v-select.vs--single.input-bordered .vs__dropdown-toggle {
-  padding: 0.6rem 0.2rem !important;
-}
-.v-select.input-bordered .vs__dropdown-toggle {
-  padding: 0.6rem 0.2rem !important;
-}
-
-.vs--single .vs__selected {
-  background-color: transparent !important;
-  border: transparent !important;
-  color: #4f5054 !important;
-}
-
-.vs__selected {
-  margin: 0px 2px 0 !important;
-  padding: 0.15em 0.35em !important;
-  background-color: #ffeaa8 !important;
-  border: 1px solid #bf9310 !important;
-  color: #964c00 !important;
-  /* background-color: #c5f0c0 !important;
-    border: 1px solid #1b850f !important;
-    color: #166e0c !important; */
-}
-
-.vs__deselect {
-  fill: rgb(157, 87, 14) !important;
-}
-
-.vs__search,
-.vs__search:focus {
-  font-size: 1.2em !important;
-  margin: 0 !important;
-  -webkit-font-smoothing: antialiased;
-}
-.vs__search,
-.vs__search::placeholder {
-  font-size: 15px !important;
-  color: #3b3f5c;
-}
-
-.vs__selected-options {
-  padding: 4px 4px !important;
-}
-
-.v-select.input-bordered .vs__dropdown-toggle {
-  background: #f5f5f5;
-  border: none;
-}
-
-.v-select .vs__clear {
-  display: none;
-}
-.v-select .vs__open-indicator {
-  fill: #717690 !important;
 }
 
 /* Input Wrap */
@@ -1316,7 +1192,7 @@ tbody tr.VueTables__row:focus {
 
 .search-icon {
   position: absolute;
-  right: 20px;
+  left: 230px;
   top: 23px;
 }
 
